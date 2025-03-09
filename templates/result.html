@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculation Result</title>
+</head>
+<body>
+    <h1>Calculation Result</h1>
+    <p>The surface area S is: {{ surface_area }}</p>
+    <iframe src="{{ url_for('static', filename='solid_of_revolution.html') }}" width="100%" height="600"></iframe>
+    <br>
+    <a href="/">Go back</a>
+</body>
+</html>

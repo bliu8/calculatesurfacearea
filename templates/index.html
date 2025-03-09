@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Area Calculator</title>
+</head>
+<body>
+    <h1>Surface Area of Revolution Calculator</h1>
+    <form action="/calculate" method="post">
+        <label for="function">Enter the function f(x):</label><br>
+        <input type="text" id="function" name="function"><br><br>
+        <label for="lower_bound">Enter the lower bound a (x-values only):</label><br>
+        <input type="text" id="lower_bound" name="lower_bound"><br><br>
+        <label for="upper_bound">Enter the upper bound b (x-values only):</label><br>
+        <input type="text" id="upper_bound" name="upper_bound"><br><br>
+        <label for="axis">Select the axis of rotation:</label><br>
+        <select id="axis" name="axis">
+            <option value="x" selected>x-axis</option>
+            <option value="y">y-axis</option>
+        </select><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
